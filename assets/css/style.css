@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap");
+
+:root {
+    --prymary-color: url("night.jpg");
+    --secondary-color: DimGrey;
+    --terciary-color: Gainsboro;
+}
+
+body {
+    background-image: var(--prymary-color);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-size: 15px;
+    font-family: Roboto Slab;
+    color: white;
+}
+
+#container{
+    height: 525px;
+    width: 360px;
+    margin: 100px auto; /*auto balanceia os lados*/
+    padding: 20px;
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+}
+
+.title {
+    color: Gold;
+    text-align: center;
+    font-size: 26px;
+    text-transform: uppercase;
+}
+
+.tips-form{
+    font-size: 20px;
+    text-align: center;
+}
+
+.form-input{
+    background: white;
+    width: 40px;
+}
+
+.form-input:focus {
+    border: 3px solid yellow;
+    outline: none;
+}
+
+.form-select {
+    width: auto;
+}
+
+.form-input-money {
+    width: 100px;
+}
+
+.form-submit{
+    text-transform: uppercase;
+    font-weight: bold;
+    background: gold;
+    border-radius: 5px;
+    width: 200px;
+    height: 30px;
+    font-size: 17px;
+    margin-top: 50px;
+}
