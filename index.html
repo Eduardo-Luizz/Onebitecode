@@ -16,7 +16,7 @@
         </div>
 
         <div>
-            <form class="tips-form">
+            <form class="tips-form" id="tips-form">
 
                 <label for="bill">
                     <p>Quanto ficou a conta?</p>
@@ -24,7 +24,7 @@
                 <!--fim label bill-->
 
                 <p>
-                    R$ <input type="number" placeholder="Ex: 100" name="bill" id="bill" class="form-input-money">
+                    R$ <input type="number" placeholder="Ex: 100" name="bill" id="bill" class="form-input-money" required>
                 </p>
                 <!--fim p input-->
 
@@ -34,7 +34,7 @@
                 <!--fim label p-->
 
                 <p>
-                    <select name="service-quality" id="service-quality" class="form-select">
+                    <select name="service-quality" id="service-quality" class="form-select" required>
                         <option disabled selected value="0">-- Escolha uma opção</option>
                         <option value="0.3">30% - Incrível</option>
                         <option value="0.2">20% - Bom</option>
@@ -55,7 +55,7 @@
                 <!--fim label-->
 
                 <p>
-                    <input type="number" placeholder="1" name="people" id="people" class="form-input"> pessoa(s)
+                    <input type="number" placeholder="1" name="people" id="people" class="form-input" required> pessoa(s)
                 </p>
                 <!--fim p-->
 
@@ -63,7 +63,14 @@
 
             </form>
         </div>
+
+        <div id="total-tip">
+            Gorjeta total:
+            R$<span id="tip">0,00</span>
+             <span id="each">cada</span>
+        </div>
     </div>
+    <script type="text/javascript" src="./assets/js/index.js"></script>
 </body>
 
 </html>
